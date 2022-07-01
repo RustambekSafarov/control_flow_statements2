@@ -7,6 +7,13 @@ Args:
 Returns:
     int: return answer. 
 */
-
+int func(a,b){
+    if (a==b){
+        return 0;
+    }else if (a>b){
+        return a;
+    }
+    return b;
+}
 void main() {
 }
