@@ -8,17 +8,19 @@ Args:
 Returns:
     int: return answer. */
 int func(a,b,c){
-    if (a<b){
-        if (b<c){
-            return b;
-        }
-        return c;
-    }
-    if (a<c){
+    if (a>b&&b>c){
+        return b;
+    }else if(c>b&&b>a){
+        return b;
+    }else if(b>a&&a>c){
         return a;
-    }
-    return c;
+    }else if (c>a&&a>b){
+        return a;
+    }else if (b>c&&c>a){
+        return c;
+    }return c;
+
 }
 void main() {
-    print(func(4,6,9));
+    print(func(1,2,3));
 }
