@@ -13,17 +13,17 @@ int func(a){
     int n = ((a~/100)~/10)%10;
     int m = ((a~/100)~/10)~/10;
     if (x > y && x > z && x > n && x > m){
-        return 5;
+        return 1;
     }else if(y > x && y > z && y > n && y > m){
-        return 4;
+        return 2;
     }else if (z > x && z > y && z > m && z > n){
         return 3;
     }else if (n > x && n > y && n > z && n > m){
-        return 2;
+        return 4;
     }else{
-        return 1;
+        return 5;
     }
 }
 void main() {
-    print(func(48583));
+    print(func(54329));
 }
