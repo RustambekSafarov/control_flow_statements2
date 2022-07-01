@@ -14,6 +14,31 @@ Args:
 Returns:
     str: return answer. 
 */
-
+String func(a){
+    String x = "";
+    if (a==1){
+        return x = "Monday";
+    }
+    if (a==2){
+        return x = "Tuesday";
+    }
+    if (a==3){
+        return x = "Wednesday";
+    }
+    if (a==4){
+        return x = "Thursday";
+    }
+    if (a==5){
+        return x = "Friday";
+    }
+    if (a==6){
+        return x = "Saturday";
+    }
+    if (a==7){
+        return x = "Sunday";
+    }
+    return x;
+}
 void main() {
+    print(func(5));
 }
